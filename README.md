@@ -15,4 +15,59 @@ API Base URL: https://cuci-sepatu-seven.vercel.app/
 3. Mengelola data menggunakan database (Supabase).
 4. Membangun sistem pencatatan yang relevan dengan kebutuhan bisnis nyata.
 
-##
+## Teknologi yang Digunakan
+
+1. Node.js: Runtime environment untuk menjalankan JavaScript di sisi server.
+2. Express.js: Framework untuk membangun REST API.
+3. Supabase: Digunakan sebagai Database PostgreSQL untuk menyimpan data.
+4. Vercel: Platform untuk deployment API.
+
+## Fitur Utama API
+
+| Metode | Endpoint   | Deskripsi                                                                |
+| ------ | ---------- | ------------------------------------------------------------------------ |
+| GET    | /items     | Menampilkan seluruh daftar sepatu yang sedang dicuci.                    |
+| POST   | /items     | Menambahkan data sepatu baru ke dalam daftar.                            |
+| PUT    | /items/:id | Memperbarui status sepatu (misalnya dari Sedang Dicuci menjadi Selesai). |
+| DELETE | /items/:id | Menghapus data sepatu yang sudah selesai dicuci.                         |
+
+## Alur Kerja API
+
+1. Pengguna mengirimkan permintaan HTTP (GET, POST, PUT, DELETE) ke server.
+2. Server memproses permintaan menggunakan Express.js.
+3. Data sepatu disimpan atau diambil dari database Supabase.
+4. Server mengembalikan respons dalam format JSON.
+
+## Struktur Data
+
+Contoh struktur data sepatu yang dikelola oleh API:
+
+```
+{
+  "id": 1,
+  "nama": "Nike Air Force 1",
+  "status": "Sedang Dicuci",
+  "tanggalMasuk": "2025-10-08",
+  "tanggalSelesai": "-"
+}
+```
+
+Keterangan:
+
+- id → Nomor unik sepatu (dibuat otomatis oleh database).
+- nama → Nama sepatu atau merek pelanggan.
+- status → Status proses cuci (misal: "Sedang Dicuci", "Selesai").
+- tanggalMasuk → Tanggal sepatu diterima untuk dicuci.
+- tanggalSelesai → Tanggal sepatu selesai dicuci (diisi saat status di-update).
+
+## Dokumentasi Endpoint API
+
+Berikut adalah penjelasan rinci untuk setiap endpoint yang tersedia. Anda dapat mengujinya menggunakan Postman atau tools sejenis.
+
+### GET /items
+
+Menampilkan seluruh daftar sepatu yang sedang dicuci.
+
+- Metode: GET
+- URL: https://cuci-sepatu-seven.vercel.app/items
+- Response (Success 200 OK):
