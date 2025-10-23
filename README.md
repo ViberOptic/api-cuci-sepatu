@@ -1,8 +1,8 @@
 # REST API Daftar Barang Cuci Sepatu
 
-Nama     : Muhammad Azka Wijasenna\n
-NIM      : 21120123140125\n
-Kelompok : 11\n
+Nama     : Muhammad Azka Wijasenna/n
+NIM      : 21120123140125/n
+Kelompok : 11/n
 
 ## Deskripsi Umum
 
