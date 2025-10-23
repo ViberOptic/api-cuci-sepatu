@@ -148,7 +148,7 @@ Memperbarui status sepatu (misalnya dari "Sedang Dicuci" menjadi "Selesai").
 }
 ```
 
-## 4. DELETE /items/:id
+### 4. DELETE /items/:id
 
 Menghapus data sepatu yang sudah selesai dicuci atau diambil.
 
