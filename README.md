@@ -2,9 +2,9 @@
 
 ## Identitas
 
-Nama     : Muhammad Azka Wijasenna
+Nama : Muhammad Azka Wijasenna
 
-NIM      : 21120123140125
+NIM : 21120123140125
 
 Kelompok : 11
 
