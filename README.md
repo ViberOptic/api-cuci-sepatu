@@ -8,4 +8,11 @@ Tujuan utama proyek ini adalah untuk mempermudah proses pencatatan, pemantauan, 
 
 API Base URL: https://cuci-sepatu-seven.vercel.app/
 
+## Tujuan
+
+1. Mengimplementasikan konsep CRUD (Create, Read, Update, Delete) dalam REST API.
+2. Meningkatkan pemahaman penggunaan Express.js sebagai framework backend.
+3. Mengelola data menggunakan database (Supabase).
+4. Membangun sistem pencatatan yang relevan dengan kebutuhan bisnis nyata.
+
 ##
