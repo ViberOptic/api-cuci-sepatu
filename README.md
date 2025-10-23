@@ -6,4 +6,6 @@ Proyek ini adalah REST API fungsional yang dibuat menggunakan Node.js dan Expres
 
 Tujuan utama proyek ini adalah untuk mempermudah proses pencatatan, pemantauan, dan pembaruan status cucian sepatu secara digital melalui REST API sederhana.
 
+API Base URL: https://cuci-sepatu-seven.vercel.app/
+
 ##
