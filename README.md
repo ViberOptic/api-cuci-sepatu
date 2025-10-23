@@ -64,10 +64,54 @@ Keterangan:
 
 Berikut adalah penjelasan rinci untuk setiap endpoint yang tersedia. Anda dapat mengujinya menggunakan Postman atau tools sejenis.
 
-### GET /items
+### 1. GET /items
 
 Menampilkan seluruh daftar sepatu yang sedang dicuci.
 
 - Metode: GET
 - URL: https://cuci-sepatu-seven.vercel.app/items
 - Response (Success 200 OK):
+
+```
+[
+  {
+    "id": 1,
+    "nama": "Converse Chuck Taylor",
+    "status": "Selesai",
+    "tanggalMasuk": "2025-10-01",
+    "tanggalSelesai": "2025-10-03"
+  },
+  {
+    "id": 2,
+    "nama": "Nike Air Max",
+    "status": "Sedang Dicuci",
+    "tanggalMasuk": "2025-10-08",
+    "tanggalSelesai": "-"
+  }
+]
+```
+
+### 2. POST /items
+
+Menambahkan data sepatu baru ke dalam daftar.
+
+- Metode: POST
+- URL: https://cuci-sepatu-seven.vercel.app/items
+- Request Body (JSON):
+
+```
+{
+  "nama": "Nike Air Max",
+  "status": "Sedang Dicuci",
+  "tanggalMasuk": "2025-10-08",
+  "tanggalSelesai": "-"
+}
+```
+
+- Response (Success 201 Created):
+
+```
+{
+  "message": "Data sepatu berhasil ditambahkan."
+}
+```
